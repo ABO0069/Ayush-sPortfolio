@@ -315,33 +315,27 @@
         </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         AOS.init({
             offset: 120, 
             duration: 1000, 
-            once: true, 
+            once: false,  
+            mirror: true,
         });
-    </script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-    AOS.init({
-        offset: 120,
-        duration: 1000,
-        once: true,
-    });
-    var typed = new Typed('#typing-text', {
-        strings: [
-            "Full Stack Developer", 
-            "MERN Stack Specialist", 
-            "Flutter Developer",
-            "AI Researcher", 
-            "Problem Solver"
-        ],
-        typeSpeed: 50,    
-        backSpeed: 25,    
-        backDelay: 1000,  
-        loop: true       
-    });
+        var typed = new Typed('#typing-text', {
+            strings: [
+                "Full Stack Developer", 
+                "MERN Stack Specialist", 
+                "Flutter Developer",
+                "AI Researcher", 
+                "Problem Solver"
+            ],
+            typeSpeed: 50,    
+            backSpeed: 25,    
+            backDelay: 1000,  
+            loop: true       
+        });
     </script>
 
     <script src="script.js"></script>
